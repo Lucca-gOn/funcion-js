@@ -1,11 +1,11 @@
 import PromptSync from "prompt-sync";
 
-import { cargoSalario } from "./ex1.js";
-import { aumentoFuncionarios } from "./ex2.js";
-import { numInteiro } from "./ex3.js";
-import { imparPar } from "./ex4.js";
-import { maiorNumero } from "./ex5.js";
-import { notasAluno } from "./ex6.js";
+import { cargoSalario } from "./ex1";
+import { aumentoFuncionarios } from "./ex2";
+import { numInteiro } from "./ex3";
+import { imparPar } from "./ex4";
+import { maiorNumero } from "./ex5";
+import { notasAluno } from "./ex6";
 
 
 
@@ -13,8 +13,8 @@ const prompt = PromptSync();
 
 // MENU PARA ESCOLHER EXERCICIO QUE O USUARIO ESCOLHER
 
-let exercicio;
-let continuar;
+let exercicio: number;
+let continuar: string;
 
 do {
 
@@ -49,7 +49,7 @@ do {
             break;
     }
 
-    continuar = prompt("Deseja continuar a ver outros exercicios? Digite (S) para sim e (N) para não").toLocaleLowerCase();
+    continuar = prompt("Deseja continuar a ver outros exercicios? Digite (S) para sim e (N) para não: ").toLocaleLowerCase();
 
 
 } while (continuar === "s");
